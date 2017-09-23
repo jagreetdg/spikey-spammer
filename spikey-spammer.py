@@ -12,7 +12,7 @@ import smtplib
 import sys
 import os
 
-print '\nOUTPUT INFO : '
+print '\nSCRIPT OUTPUT INFO : '
 print '\n\'->\' before an output indicates it is a non-verbose log'
 print '\n\'!>\' before an output indicates it is a verbose log'
 print '\n\'~>\' before an output indicates it is an error log'
