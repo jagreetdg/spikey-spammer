@@ -59,8 +59,8 @@ try:
     for i in range(1, number+1):
     	if set_sub == 0:
         	subject = os.urandom(9)
-        message = 'From: ' + sender_name + '\nSubject: ' + subject + '\n' + message_body
-        mlserve.sendmail(sender_name,reci,message)
+        message = 'From: ' + username + '\nSubject: ' + subject + '\n' + message_body
+        mlserve.sendmail(username,reci,message)
         print "\r!> E-Mail Packet Number #%i Sent..." % i
         sys.stdout.flush()
     mlserve.quit()
