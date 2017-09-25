@@ -6,7 +6,7 @@
 #Version : 1.1
 
 import getpass
-from spikey_spammer import spam_mail
+from spammer import spam_mail
 
 print '\nSCRIPT OUTPUT INFO : '
 print '\n\'->\' before an output indicates it is a non-verbose log'
