@@ -32,7 +32,7 @@ if y=='y':
 
 message_body = raw_input('?> Message: ')
 files = []
-y3 = raw_input('?> Do you want to attach files ? ')
+y3 = raw_input('?> Do you want to attach files ? (y/n) ')
 if y3=='y':
 	no = input('?> Enter Number of Files to Attach ? ')
 	for i in range(1,no+1):

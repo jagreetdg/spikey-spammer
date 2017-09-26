@@ -56,8 +56,15 @@ def spam_mail(reci,username,password,message_body,mlserve,number,set_sub,files) 
 	        msg = MIMEMultipart()
 	    	msg['From'] = username
 	    	msg['To'] = reci
+	    	msg['Subject:'] = subject
 	    	msg.attach(MIMEText(message_body))
-	        msg['Subject:'] = subject
+	        for file in files:
+				part = MIMEBase('application', "octet-stream")
+				strg = open(file,"rb").read()
+				part.set_payload(strg)
+				Encoders.encode_base64(part)
+				part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(file))
+				msg.attach(part)
 	        mlserve.sendmail(username,reci,msg.as_string())
 	        print "\r!> E-Mail Packet Number #%i Sent..." % i
 	        sys.stdout.flush()
