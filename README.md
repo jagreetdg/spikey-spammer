@@ -2,7 +2,7 @@ Spikey Spammer v1.1
 
 Developed by Jagreet Das Gupta
 
-Author : V0!D
+Author : v01d
 
 Copyright : V!$(3R4
 
